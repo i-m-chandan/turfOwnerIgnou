@@ -3,8 +3,8 @@ import axios from "axios";
 const axiosInstance = axios.create({
   // baseURL: "http://localhost:1234",
   // baseURL: "https://turf-spot-be.vercel.app",
-  // baseURL: "http://localhost:3000",
-  baseURL: "https://turfbackendignou.onrender.com",
+  baseURL: "http://localhost:3000",
+  // baseURL: "https://turfbackendignou.onrender.com",//
 });
 
 axiosInstance.interceptors.request.use((config) => {

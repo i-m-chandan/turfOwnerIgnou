@@ -56,7 +56,7 @@ const SignUp = () => {
                 className="btn-primary w-full"
                 loading={loading}
               >
-                Sign Up
+                Sign Up For Owner
               </Button>
             </div>
           </form>

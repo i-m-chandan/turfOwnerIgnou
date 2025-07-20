@@ -6,6 +6,13 @@ import Home from "@pages/Home.jsx";
 import Login from "@pages/Login";
 import SignUp from "@pages/SignUp";
 
+// 📄 Import newly created pages
+import PrivacyPolicy from "@pages/Legal/PrivacyPolicy";
+import TermsAndConditions from "@pages/Legal/TermsAndConditions";
+import CancellationAndRefund from "@pages/Legal/CancellationAndRefund";
+import ShippingAndDelivery from "@pages/Legal/ShippingAndDelivery";
+import ContactUs from "@pages/Legal/ContactUs";
+
 //  all the components that are used in the layout
 import { AdminLayout, OwnerLayout, GuestLayout } from "@layouts";
 
@@ -53,6 +60,12 @@ const router = createBrowserRouter([
         path: "signup",
         element: <SignUp />,
       },
+      // 👇 Additional pages
+      { path: "privacy-policy", element: <PrivacyPolicy /> },
+      { path: "terms-and-conditions", element: <TermsAndConditions /> },
+      { path: "cancellation-and-refund", element: <CancellationAndRefund /> },
+      { path: "shipping-and-delivery", element: <ShippingAndDelivery /> },
+      { path: "contact-us", element: <ContactUs /> },
     ],
   },
   {
